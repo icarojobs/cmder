@@ -1,0 +1,231 @@
+composer require backpack/crud:"4.1.x-dev as 4.0.99"
+composer require backpack/generators --dev
+composer require laracasts/generators --dev
+git checkout -b icaro-teste
+git checkout icaro-teste 
+git statush
+git branch -d icaro-teste 
+git stash drop
+git flow feature start nibo-integration
+git stash
+git branch -d 
+git branch -d feature/nibo-integration
+git flow feature pull nova-api-pagseguro
+git flow feature track nova-api-pagseguro
+git commit -m "criado classe de serviço NiboService"
+php artisan make:controller Api/NiboApiController --resource
+php artisan --version
+git commit -m "testado getCustomers() e createCustomer() da classe NiboService - Controller de testes NiboApiController em /nibo"
+git commit -am "finalizado integração do CRUD de clientes na API NIBO"
+npm init -y
+mkdir src
+npm i puppeteer
+node src\index.js 
+git commit -am "testes ok, mas a udemy não deixa bot acessar"
+docker-compose up -d
+docker-composer up
+docker-compose.exe up
+php artisan config:clear
+php artisan route:clear
+cd bootstrap\cache\
+rm -rf config.php 
+cd storage\
+rm -rf logs\
+composer install
+cd ../..
+composer self-update
+php artisan serve
+php artisan make:command NiboSendReceipt
+git commit -am "criado estrutura base do comando nibo"
+php artisan tinker
+git commit -am "Finalizado integração básica com Nibo. Aberto chamado para verificar erro de NFSE"
+php artisan make:controller TestController --resource
+cd ../../../
+composer init -y
+php index.php
+php index.php 
+composer init
+composer require phpmailer/phpmailer
+composer dumpautoload -o
+cd phpmasterclass\
+cd contact-web-bot\
+cd ../
+cd c:
+cd c:\devilbox\
+git commit -am "adicionado novas constantes e novo método para tratar payload de agendamento"
+nvm
+nvm install 12.16
+nodejs -v
+nvm use node
+nvm ls-remote
+nvm use --lts
+nvm list
+nvm use 12.16.0
+node --version
+git clone https://github.com/cytopia/devilbox
+cd devilbox\
+cp env-example .env
+pwd
+docker-composer up -d
+vim
+which php
+composer
+php -S localhost:8080
+cd data\
+cd www\
+docker-compose.exe exec -it devilbox_php_1 bash
+docker exec -it devilbox_php_1 bash
+docker-compose.exe rm -f
+docker pull devilbox/php-fpm:7.3-mods
+docker pull devilbox/php-fpm:7.1-mods
+shell.bat 
+composer create-project bagisto/bagisto decorar
+mklink C:\php_envs\php71\xampp\htdocs\decorar\public\storage C:\php_envs\php71\xampp\htdocs\decorar\storage
+cd htdocs\
+cd decorar\
+php artisan storage:link
+mklink /D "C:\php_envs\php71\xampp\htdocs\decorar\storage" "C:\php_envs\php71\xampp\htdocs\decorar\public\storage"
+cd c:\php_envs\php71\xampp\htdocs\decorar\public\storage
+mklink /D "C:\php_envs\php71\xampp\htdocs\decorar\public\storage" "C:\php_envs\php71\xampp\htdocs\decorar\storage"
+cd c:\php_envs\php71\xampp\htdocs\decorar\
+cd public\
+rm -rf storage
+mklink /D "C:\php_envs\php71\xampp\htdocs\decorar\public\storage" "C:\php_envs\php71\xampp\htdocs\decorar\storage\app\public"
+code .
+^Z
+cd data\www\
+php -v
+composer global require laravel/installer
+laravel new decorar
+rm -rf decorar
+git clone https://gitlab.com/preparatodos/preparatodos_v2.git
+mv preparatodos_v2\ preparatodos
+composer install --ignore-platform-reqs
+git checkout -b feature/nova-api-pagseguro
+git pull origin feature/nova-api-pagseguro
+php artisan make:migration add_nibo_customer_id_to_users_table --table=users
+git config --global user.email "icarowilliam@me.com"
+git config --global user.name "Icaro William"
+git commit -am "acertado constantes nibo e adicionado NiboSendReceipt no Kernel"
+git push --set-upstream origin feature/nova-api-pagseguro
+php artisan make:job SaveScheduleNibo
+php artisan make:migration add_nibo_schedule_id_to_invoices_table --table=invoices
+git commit -m "Manutenção e implementação do nibo customer e schedule
+php artisan make:observer InvoiceObserver --help
+php artisan make:observer InvoiceObserver -m Invoice
+php artisan make:job SaveNFSENibo
+php artisan make:migration add_nibo_nfse_id_to_invoices_table --table=invoices
+git commit -am "Implementado job para criar NFSE no Nibo"
+docker-compose.exe stop
+php artisan config:cache
+git commit -am "Tratado para pegar endereço do estudante caso existir e pegar endereço Prepara caso não exista em NiboRepository"
+php artisan config:clear && php artisan:clear-compiled && php artisan view:clear && php artisan config:cache
+php artisan config:clear && php artisan clear-compiled && php artisan view:clear && php artisan config:cache
+php artisan route:clear && php artisan config:clear && 
+php artisan route:clear && php artisan config:clear && php artisan cache:clear
+php artisan route:clear && php artisan config:clear && php artisan cache:clear && php artisan key:generate
+git commit -m "adicionado log na classe SaveCustomerDataNibo"
+docker-compose.exe up -d
+git checkout -b nibo-update-contact
+git branch -D feature/nova-api-pagseguro 
+git branch -D nibo-update-contact 
+git checkout -b 
+git pull --set-upstream-to=origin/feature/nibo-update-contact feature/nibo-update-contact
+git pull -u origin feature/nibo-update-contact
+git commit -m "corrigido erro de digitação"
+git push --set-upstream origin feature/nibo-update-contact
+git tag
+redis-cli
+cd ../../
+docker-compose.exe ps
+docker-compose.exe exec -it devilbox_redis_1 bash
+docker-compose.exe exec -t devilbox_redis_1 bash
+docker.exe exec -it devilbox_redis_1 bash
+git commit -m "finalizado feature nibo-update-contact"
+git checkout feature/nibo-update-contact 
+git branch -D feature/nibo-update-contact 
+git flow init
+git checkout -b feature/nibo-update-contact
+git pull origin feature/nibo-update-contact
+php artisan migrate
+git flow feature finish nibo-update-contact
+git flow release start 2.26.0
+git flow realease finish 2.26.0
+git checkou master
+git flow release finish 2.26.0
+ git branch
+git checkout .
+git flow hotfix start 2.26.1
+git commit -m "corrigido método update do StudentObserver"
+git flow hotfix finish 2.26.1
+git push
+git pull
+git flow feature start nibo-delete-customer
+php artisan make:job DeleteCustomerNibo
+git add . && git commit -m "finalizado método de exclusão de usuário no nibo"
+git flow feature finish nibo-delete-customer
+git flow release start 2.28.0
+fiw flow release finish 2.28.0
+git flow release finish 2.28.0
+git checkout master && git push
+vim index.php
+git config --global color.ui
+git config --list
+git config --global color.ui  false
+git config --global color.ui  true
+git rm --cached .
+git rm --chached -r .
+git rm --cached -r .
+git reset HEAD -- upload.php 
+cat server
+cat server.php
+git reset HEAD -- server.php
+cat server.php 
+git reset HEAD -- upload.php
+rm -rf upload.php 
+git reset HEAD -- -r .
+rm rf teste_git\
+ls -la
+git reset hard
+vim server.php
+git reset --soft
+git reset --mixed
+git reset --hard
+git reset --hard e81c3e3
+mk dir teste_git
+git commit -m "segundo commit"
+git reset --soft c619ec8
+mkdir teste_git
+cd teste_git\
+touch index.php && vim index.php
+touch server.php
+vim server.php 
+git commit -m "segundo commit "
+ls
+git checkout master
+git checkout 4b1b1725
+touch upload.php
+vim upload.php 
+git commit -m "terceiro commit"
+git log
+cd ..
+rm -rf teste_git
+mkdir teste_git && cd teste_git
+git init
+touch index.php
+vim index.php 
+git status
+git add .
+git commit -m "primeiro commit"
+git checkout -b develop
+git branch
+git branch -r
+php.exe -v
+npm install -g surge
+npm install -g netlify-cli
+npm -v
+node -v
+clear
+npm isntall -g firebase-tools
+npm install -g firebase-tools
+git clone https://github.com/icarojobs/cmder.git
