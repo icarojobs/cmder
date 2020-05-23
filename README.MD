@@ -1,3 +1,5 @@
+Acesse o seu C: e clone o repositório icarojobs/cmder. Em seguida siga os seguintes passos:
+
 1. Adicione o caminho do Cmder.exe no path do SISTEMA:
 C:\cmder;
 
